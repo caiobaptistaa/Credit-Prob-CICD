@@ -23,4 +23,3 @@ def test_make_prediction(client: TestClient, test_data: pd.DataFrame) -> None:
     assert prediction_data["errors"] is None
     assert prediction_data["predictions"][0] >= 0.00
     assert prediction_data["predictions"][0] <= 1.00
-    
